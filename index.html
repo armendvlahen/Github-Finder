@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="MainHeader">
+    <h1>GitHub Profile Finder</h1>
+    <p>Enter a GitHub username to find their profile.</p>
+    <input type="text" id="username" placeholder="Vendos username">
+    <button id="searchButton">Kerko</button>
+  </div>
+
+  <div class="profile" id="profile" style="display: none;">
+    <h2 id="profileName">
+        <span id="name"></span>
+        <span id="usernameDisplay"></span>
+    </h2>
+    <img id="avatar" src="" alt="Profile Avatar">
+    <p id="bio"></p>
+    <p id="location"></p>
+    <p id="followers"></p>
+    <p id="following"></p>
+    <p id="publicRepos"></p>
+    <p id="createdAt"></p>
+    <p id="updatedAt"></p>
+    <div>
+        <a id="profileLink" href="" target="_blank">Kliko linkun per profil</a>
+    </div>
+    <div id="error" class="error" style="display: none;">
+        <p>Gabim: Nuk u gjet asnje profil me kete username.</p>
+    </div>
+    <div id="loading" class="loading" style="display: none;">
+        <p>Po kerkojme profilin...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
